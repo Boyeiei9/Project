@@ -25,7 +25,7 @@
         </div>
         <div class="form-group">
             <label for="employees">พนักงานที่รับผิดชอบ:</label>
-            <select name="employees[]" id="employees" class="form-control" multiple>
+            <select name="employees" id="employees" class="form-control" >
                 @foreach ($employees as $employee)
                 <option value="{{ $employee->id }}"
                     {{ $project->employees->contains($employee->id) ? 'selected' : '' }}>

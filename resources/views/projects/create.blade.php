@@ -23,7 +23,7 @@
             <input type="date" class="form-control" id="end_date" name="end_date" required>
             <div class="form-group">
                 <label for="employees">พนักงานที่รับผิดชอบ:</label>
-                <select name="employees[]" id="employees" class="form-control" multiple>
+                <select name="employees" id="employees" class="form-control" >
                     @foreach ($employees as $employee)
                     <option value="{{ $employee->id }}">
                         {{ $employee->name }} {{ $employee->lastname }} ({{ $employee->position }})
